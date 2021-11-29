@@ -7,7 +7,7 @@ public abstract class StatusIndicator : MonoBehaviour
 {
     public Image statusBar; // [refactor] may rename this 
     public Global globals; 
-    float status, max = 100; 
+    protected float status, max = 100; 
     float lerpSpeed; 
 
     // Start is called before the first frame update
