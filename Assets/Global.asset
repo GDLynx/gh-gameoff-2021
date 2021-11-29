@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af68a35b4c3b0dc4c9b4d7a621d17224, type: 3}
   m_Name: Global
   m_EditorClassIdentifier: Assembly-CSharp::Global
-  money: -9.244448e+20
-  bugs: 0.23567812
-  bloodPressure: 0.7
+  money: 1000
+  bugs: 0.37215772
+  bloodPressure: 0.8099999

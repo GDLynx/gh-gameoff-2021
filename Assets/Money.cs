@@ -16,6 +16,7 @@ public class Money : MonoBehaviour
     }
 
     // Update is called once per frame
+    // so this is just responsible for adding the money to the canvas txt for money
     void Update()
     {
         moneyText.text = "$"+globals.money.ToString();    

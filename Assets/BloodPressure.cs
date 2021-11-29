@@ -10,7 +10,8 @@ public class BloodPressure : StatusIndicator {
         base.Update(); 
         if (status >= 0.70f) {
             pumpTimer += 0.1f; 
-            Debug.Log(pumpTimer); 
+            // log spamming
+            // Debug.Log(pumpTimer); 
             if (pumpTimer > 0.5f) {
                 grow = !grow; 
                 pumpTimer = 0f; 
