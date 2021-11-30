@@ -4187,7 +4187,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.4
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4284,6 +4284,7 @@ MonoBehaviour:
   audio: {fileID: 1829296153}
   dying: {fileID: 8300000, guid: abdb126660cd0a445ad036033daae5c7, type: 3}
   mainTune: {fileID: 8300000, guid: cea54dd9627675540a42e1c1d89958e5, type: 3}
+  global: {fileID: 11400000, guid: 6388e51790da6cd458ef37be81dcb743, type: 2}
 --- !u!1 &1885280977
 GameObject:
   m_ObjectHideFlags: 0

@@ -41,32 +41,4 @@ public class MusicHub : MonoBehaviour
         audio.Play();
     }
 
-    // audio testing. erase this later
-    void OnGUI()
-    {
-        if (GUI.Button(new Rect(10, 70, 150, 30), "Pause"))
-        {
-            audio.Pause();
-            Debug.Log("Pause: " + audio.time);
-        }
-
-        if (GUI.Button(new Rect(10, 120, 150, 30), "Play death"))
-        {
-            Debug.Log("clip name = "+ audio.clip);
-            audio.clip = dying;
-            audio.Play();
-        }
-
-        if (GUI.Button(new Rect(10, 170, 150, 30), "Play main tune"))
-        {
-            Debug.Log("clip name = " + audio.clip);
-            audio.clip = mainTune;
-            audio.Play();
-        }
- 
-        if (GUI.Button(new Rect(10, 230, 150, 30), "Continue"))
-        {
-            audio.UnPause();
-        }
-    }
 }
