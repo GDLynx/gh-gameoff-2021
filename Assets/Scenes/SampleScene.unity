@@ -215,9 +215,11 @@ GameObject:
   - component: {fileID: 107021892}
   - component: {fileID: 107021891}
   - component: {fileID: 107021890}
+  - component: {fileID: 107021894}
+  - component: {fileID: 107021895}
   m_Layer: 5
   m_Name: Automator
-  m_TagString: Untagged
+  m_TagString: Buyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -302,7 +304,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 107021892}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &107021892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,6 +355,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107021888}
   m_CullTransparentMesh: 1
+--- !u!114 &107021894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107021888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b440f9a51b58a6c4f84dc48358fb89ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &107021895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107021888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64eb24e9dc398bd4aa9fe581b7d68388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globals: {fileID: 0}
+  price: 0
+  bought: 0
 --- !u!1 &142139720
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,7 +1034,7 @@ GameObject:
   - component: {fileID: 343014899}
   m_Layer: 5
   m_Name: upgrade1 (2)
-  m_TagString: Untagged
+  m_TagString: Buyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1945,9 +1986,10 @@ GameObject:
   - component: {fileID: 656087119}
   - component: {fileID: 656087118}
   - component: {fileID: 656087117}
+  - component: {fileID: 656087121}
   m_Layer: 5
   m_Name: upgrade1
-  m_TagString: Untagged
+  m_TagString: Buyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2071,6 +2113,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656087115}
   m_CullTransparentMesh: 1
+--- !u!114 &656087121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656087115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b440f9a51b58a6c4f84dc48358fb89ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,6 +2837,50 @@ MonoBehaviour:
   progressBar: {fileID: 224798785}
   progressPoint: 0.001
   globals: {fileID: 11400000, guid: 6388e51790da6cd458ef37be81dcb743, type: 2}
+--- !u!1 &879385492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 879385494}
+  - component: {fileID: 879385493}
+  m_Layer: 0
+  m_Name: Main
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &879385493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879385492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f248d50cc44a646991ef15813ae27f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementing: 0
+--- !u!4 &879385494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879385492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 267.91614, y: 125.32012, z: 149.49545}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &889765787
 GameObject:
   m_ObjectHideFlags: 0
@@ -4175,7 +4273,7 @@ GameObject:
   - component: {fileID: 1703109131}
   m_Layer: 5
   m_Name: Automator (1)
-  m_TagString: Untagged
+  m_TagString: Buyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
