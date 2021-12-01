@@ -7,7 +7,7 @@ public abstract class StatusIndicator : MonoBehaviour
 {
     public Image statusBar; // [refactor] may rename this 
     public Global globals; 
-    protected float status, max = 100; 
+    protected float status, max = 1f; 
     float lerpSpeed; 
 
     // Start is called before the first frame update
@@ -22,6 +22,7 @@ public abstract class StatusIndicator : MonoBehaviour
     {
         status = globals.GetStatus(this); 
         statusBar.fillAmount = status; // status.global_value; // which could be bloodpressure, or bugs 
+        Debug.Log(status); 
         if (status >= max) {
             status = max; 
             onFull(); 
