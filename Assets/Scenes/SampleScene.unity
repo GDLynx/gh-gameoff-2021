@@ -259,6 +259,7 @@ MonoBehaviour:
   price: 2
   bought: 0
   worker: {fileID: 1527875210}
+  timer: 0
 --- !u!114 &107021891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1035,6 +1036,7 @@ MonoBehaviour:
   price: 23
   bought: 0
   bugRemovePercentageIncrease: 1e+9
+  timer: 0
 --- !u!114 &343014900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1346,6 +1348,7 @@ MonoBehaviour:
   price: 23
   bought: 0
   bugRemovePercentageIncrease: 9.323334e+15
+  timer: 0
 --- !u!114 &390901137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1986,9 +1989,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globals: {fileID: 11400000, guid: 6388e51790da6cd458ef37be81dcb743, type: 2}
-  price: 23
+  price: 32323332
   bought: 0
   bugRemovePercentageIncrease: 323232
+  timer: 0
 --- !u!114 &656087118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4217,6 +4221,7 @@ MonoBehaviour:
   price: 3
   bought: 0
   worker: {fileID: 142139720}
+  timer: 0
 --- !u!114 &1703109132
 MonoBehaviour:
   m_ObjectHideFlags: 0
