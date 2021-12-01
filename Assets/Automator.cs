@@ -11,6 +11,7 @@ public class Automator : MonoBehaviour, IPointerClickHandler
     public bool bought; 
     public GameObject worker; 
     // Start is called before the first frame update
+    public float timer = 0; 
     void Start()
     {
 
@@ -21,6 +22,10 @@ public class Automator : MonoBehaviour, IPointerClickHandler
     {
         if (bought) { 
             worker.GetComponent<Worker>().Buy(); 
+        } 
+        timer += 0.1f; 
+        if (timer > 1) {
+            GetComponent<Graphic>().color = Color.white; 
         }
     } 
 
@@ -28,9 +33,16 @@ public class Automator : MonoBehaviour, IPointerClickHandler
          Buy(); 
     } 
     public void Buy() {
+        timer = 0; 
         if (globals.money >= price && !bought) {
             globals.money -= price; 
             bought = true; 
         }         
+        if (globals.money >= price) {
+            GetComponent<Graphic>().color = Color.green; 
+        }
+        if (globals.money < price) {
+            GetComponent<Graphic>().color = Color.red; 
+        }
     }
 }
