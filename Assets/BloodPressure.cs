@@ -1,6 +1,8 @@
 using UnityEngine; 
 using UnityEngine.UI; 
+using System.Collections; 
 public class BloodPressure : StatusIndicator { 
+    public GameObject heartExplode; 
     private float pumpTimer = 0; 
     private bool grow; 
     public Image outline; 
@@ -27,6 +29,18 @@ public class BloodPressure : StatusIndicator {
     }
 
     public override void onFull() {
-        Debug.Log("Blood pressure is too high"); 
+        // base.onFull(); 
+        outline.color = new Color(outline.color.r, outline.color.g, outline.color.b, 0f); 
+        heartExplode.SetActive(true); 
+        // ideally this should make the [heart] UI element invisible 
+        transform.position = new Vector2(transform.position.x - 10000f, transform.position.y - 10000);     
+        StartCoroutine(Replay()); 
+    } 
+
+    IEnumerator Replay() {
+        Debug.Log("Relay"); 
+        yield return new WaitForSeconds(1); 
+        // should probably display a death screen here with proper text 
+        Application.LoadLevel(Application.loadedLevel); 
     }
 } 
