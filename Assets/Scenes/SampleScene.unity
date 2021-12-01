@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globals: {fileID: 11400000, guid: 6388e51790da6cd458ef37be81dcb743, type: 2}
-  price: 2
+  price: 22
   bought: 0
   worker: {fileID: 1527875210}
   timer: 0
@@ -396,12 +396,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   priceText: {fileID: 1385214053}
-  price: 0
+  price: 2
   bugRemovePercentageText: {fileID: 785301315}
-  bugRemovePercentage: 0.04
+  bugRemovePercentage: 0.45
   button: {fileID: 248794596}
   progressBar: {fileID: 796546155}
-  progressPoint: 0.001
+  progressPoint: 0.003
   globals: {fileID: 11400000, guid: 6388e51790da6cd458ef37be81dcb743, type: 2}
 --- !u!1 &142922010
 GameObject:
@@ -552,7 +552,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quantim Computer $40453
+  m_Text: Quantim Computer $800
 --- !u!222 &216011598
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -970,7 +970,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Github Enterprise $60453
+  m_Text: Github Enterprise $234
 --- !u!222 &292756032
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1033,9 +1033,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globals: {fileID: 11400000, guid: 6388e51790da6cd458ef37be81dcb743, type: 2}
-  price: 23
+  price: 800
   bought: 0
-  bugRemovePercentageIncrease: 1e+9
+  bugRemovePercentageIncrease: 999
   timer: 0
 --- !u!114 &343014900
 MonoBehaviour:
@@ -1345,9 +1345,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globals: {fileID: 11400000, guid: 6388e51790da6cd458ef37be81dcb743, type: 2}
-  price: 23
+  price: 234
   bought: 0
-  bugRemovePercentageIncrease: 9.323334e+15
+  bugRemovePercentageIncrease: 10
   timer: 0
 --- !u!114 &390901137
 MonoBehaviour:
@@ -1758,7 +1758,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -150}
+  m_AnchoredPosition: {x: 0, y: -9999}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &563863052
@@ -1989,9 +1989,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globals: {fileID: 11400000, guid: 6388e51790da6cd458ef37be81dcb743, type: 2}
-  price: 32323332
+  price: 117
   bought: 0
-  bugRemovePercentageIncrease: 323232
+  bugRemovePercentageIncrease: 6
   timer: 0
 --- !u!114 &656087118
 MonoBehaviour:
@@ -2780,12 +2780,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   priceText: {fileID: 377257394}
-  price: 0
+  price: 40
   bugRemovePercentageText: {fileID: 142922012}
-  bugRemovePercentage: 0.06
+  bugRemovePercentage: 60
   button: {fileID: 1977529077}
   progressBar: {fileID: 224798785}
-  progressPoint: 0.001
+  progressPoint: 0.4
   globals: {fileID: 11400000, guid: 6388e51790da6cd458ef37be81dcb743, type: 2}
 --- !u!1 &889765787
 GameObject:
@@ -2839,6 +2839,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statusBar: {fileID: 889765790}
   globals: {fileID: 11400000, guid: 6388e51790da6cd458ef37be81dcb743, type: 2}
+  timer: 0
+  iterations: 0
 --- !u!114 &889765790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3339,7 +3341,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Scrum Master $4053
+  m_Text: Scrum Master $60
 --- !u!222 &1004310840
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3856,12 +3858,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   priceText: {fileID: 570082722}
-  price: 0
+  price: 0.6
   bugRemovePercentageText: {fileID: 850286637}
-  bugRemovePercentage: 0.04
+  bugRemovePercentage: 0.06
   button: {fileID: 1620160248}
   progressBar: {fileID: 765146787}
-  progressPoint: 0.001
+  progressPoint: 0.04
   globals: {fileID: 11400000, guid: 6388e51790da6cd458ef37be81dcb743, type: 2}
 --- !u!1 &1586461461
 GameObject:
@@ -4218,7 +4220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globals: {fileID: 11400000, guid: 6388e51790da6cd458ef37be81dcb743, type: 2}
-  price: 3
+  price: 60
   bought: 0
   worker: {fileID: 142139720}
   timer: 0
@@ -4825,9 +4827,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 860424416}
-        m_TargetAssemblyTypeName: UnityEngine.Component, UnityEngine
-        m_MethodName: SendMessage
-        m_Mode: 5
+        m_TargetAssemblyTypeName: Worker, Assembly-CSharp
+        m_MethodName: Buy
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4982,7 +4984,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: StackOverflow $40453
+  m_Text: StackOverflow $117
 --- !u!222 &2084179346
 CanvasRenderer:
   m_ObjectHideFlags: 0

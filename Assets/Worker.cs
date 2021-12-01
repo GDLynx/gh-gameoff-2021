@@ -37,7 +37,7 @@ public class Worker : MonoBehaviour
         // increase progressBar 
         if (globals.money >= price && !canUpdateProgress) { 
             globals.money -= price; 
-            price += 0.01f; 
+            price += 0.0001f; 
             priceText.text = "$"+price.ToString(); 
             progress = 0; 
             canUpdateProgress = true; 

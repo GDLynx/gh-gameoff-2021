@@ -20,10 +20,10 @@ public class MusicHub : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (global.bloodPressure >= 0.7f && audio.clip != dying)
+        if (global.bloodPressure >= 0.5f && audio.clip != dying)
         {
             PlayDying(); 
-        } else if (global.bloodPressure < 0.7f && audio.clip != mainTune)
+        } else if (global.bloodPressure < 0.5f && audio.clip != mainTune)
         {
             PlayMainTune();
         }

@@ -24,7 +24,7 @@ public class Automator : MonoBehaviour, IPointerClickHandler
             worker.GetComponent<Worker>().Buy(); 
         } 
         timer += 0.1f; 
-        if (timer > 1) {
+        if (timer > 1 && !bought) {
             GetComponent<Graphic>().color = Color.white; 
         }
     } 
@@ -38,7 +38,7 @@ public class Automator : MonoBehaviour, IPointerClickHandler
             globals.money -= price; 
             bought = true; 
         }         
-        if (globals.money >= price) {
+        if (globals.money >= price && bought) {
             GetComponent<Graphic>().color = Color.green; 
         }
         if (globals.money < price) {
